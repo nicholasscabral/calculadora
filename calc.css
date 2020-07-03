@@ -36,6 +36,7 @@ form {
     font-size: 20px;
     color: white;
     margin: 5px;
+    outline: none;
     
     border-radius: 8px;
     border: 1px solid var(--secondary-color);
@@ -54,4 +55,10 @@ form {
     border-radius: 8px;
     outline: none;
     background-color: var(--primary-color);
+
+    transition: 400ms;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
 }
