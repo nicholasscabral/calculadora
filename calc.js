@@ -1,8 +1,13 @@
 function insert(num) {
     // insert a number into the display
-    display.value +=  num
+    if(display.value.length < 20) {
 
-    console.log("valor adicionado: " + num)
+        display.value +=  num
+    
+    }
+    else {
+        return
+    }
 }
 
 function clean() {
@@ -14,19 +19,18 @@ function equal() {
     var exp = display.value
     var flag = false //boolean variable to check condicionals 
 
-    display.value = console.error
+    var error = console.error
     // if there is a syntax error, show in the display
-    if(display.value == console.error) {
+    if(error) {
         display.value = "Syntax Error"
     }
 
     for(i = 0; i < exp.length; i++) {
         
-        while(isNaN(exp[i])) {
+        if(isNaN(exp[i])) {
             if(exp[i] == "*" || exp[i] == "/") {
                 flag = true; //if there is at least one math operation before any number, flag = true
                 display.value = "Syntax Error" 
-                break
             }
         }
         break

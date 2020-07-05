@@ -60,5 +60,6 @@ form {
 }
 
 input[type="button"]:hover {
+    cursor: pointer;
     background-color: var(--secondary-color);
 }
