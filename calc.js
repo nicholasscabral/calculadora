@@ -33,7 +33,13 @@ function equal() {
     }    
 
     if(flag == false) { //if there is no  errors, calculate the expression normaly
-        display.value = eval(exp)
+        var answer = eval(exp)
+        if(isFinite(answer)) {
+            display.value = answer
+        }
+        else {
+            display.value = "Math Error" // if is infinity 
+        }
     }
    
     
@@ -44,7 +50,7 @@ function back() {
     display.value = display.value.substring(0,display.value.length-1)
 
 }
-//selecting all tue buttons
+//selecting all the buttons
 const buttons = document.querySelectorAll('.button')
 //selecting display
 const display = document.querySelector('.display')
