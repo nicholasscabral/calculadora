@@ -34,24 +34,16 @@ function equal() {
     var exp = display.value
     var flag = false //boolean variable to check condicionals 
 
-    var error = console.error
-    // if there is a syntax error, show in the display
-    if(error) {
-        display.value = "Syntax Error"
-        SyntaxError = true
-    }
-
     for(i = 0; i < exp.length; i++) {
-        
-        if(isNaN(exp[i])) {
-            if(exp[i] == "*" || exp[i] == "/") {
-                flag = true; //if there is at least one math operation before any number, flag = true
-                display.value = "Syntax Error" 
+        if(isNaN(exp[i]) && isNaN(exp[i+1])) {
+            if(exp[i] != "+" && exp[i] != "-") {
+                //if there are two operators together, toggle syntaxerror to true
+                display.value = "Syntax Error"
                 SyntaxError = true
             }
+
         }
-        break
-    }    
+    }
 
     if(flag == false) { //if there is no  errors, calculate the expression normaly
         var answer = eval(exp)

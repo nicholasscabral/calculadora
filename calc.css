@@ -32,7 +32,8 @@ form {
 .display {
     width: 234px;
     height: 90px;
-    padding-left: 6px;
+    padding-right: 6px;
+    text-align: right;
 
     font-size: 20px;
     color: white;
