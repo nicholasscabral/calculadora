@@ -88,6 +88,34 @@ const operators = document.querySelectorAll('.operator')
 operators.forEach( (button) => {
     button.addEventListener('click', calculate)
 })
+// adding event listener to the keyboard
+window.addEventListener('keypress', check)
+function check(key) {
+    let keyValue = key.key
+    if (key.keyCode) {
+        if(!isNaN(keyValue)) {
+            insert(keyValue)
+        } else { 
+            if(display.value.length == 1 && display.value[0] == 0) {
+                return
+            } else {
+                for(i = 0; i < operators.length; i++) {
+                    if(keyValue == operators[i].value) {
+                        if (keyValue == "c") {
+                            clean()
+                        } else if (keyValue == "<") {
+                            back()
+                        } else if (keyValue == "=") {
+                            equal()
+                        } else {
+                            display.value += keyValue
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
 
 //boolean variable to check if there is syntax error
 var SyntaxError = false
