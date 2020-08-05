@@ -46,6 +46,12 @@ form {
 }
 
 .operator, .number {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	padding: 0;
     width: 52px;
     height: 50px;
 
