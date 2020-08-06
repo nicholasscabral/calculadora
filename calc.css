@@ -65,9 +65,9 @@ form {
     background-color: var(--primary-color);
 
     transition: 400ms;
+    cursor: pointer;
 }
 
-.operator:hover, .number:hover {
-    cursor: pointer;
+.operator:active, .number:active {
     background-color: var(--secondary-color);
 }
