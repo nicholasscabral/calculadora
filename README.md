@@ -8,9 +8,9 @@
 
 <h2> :construction_worker: Built with <h2>
 <ul>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</li>
-  <li style="color: orange"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</li>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossario/CSS">CSS</li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossario/CSS">CSS</a></li>
 </ul>
 
 <h2>:computer: Web Screenshot <h2>
