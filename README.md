@@ -11,7 +11,6 @@
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></li>
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossario/CSS">CSS</a></li>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossario/CSS">Without any bulky front End Framework like Bootstrap ,jquery etc</a></li>
 </ul>
 
 <h2>:computer: Web Screenshot <h2>
